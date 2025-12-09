@@ -1,0 +1,6 @@
+@SampleProvider_HostAddress = https://localhost:44300
+
+GET {{SampleProvider_HostAddress}}/api/users/666
+Accept: application/json
+
+###
