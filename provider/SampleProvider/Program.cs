@@ -10,7 +10,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection(); // Dezactivat pentru testari; nu merge https local cu PactNet
 app.UseAuthorization();
 
 app.MapControllers();
@@ -23,3 +23,5 @@ static void ConfigureServices(WebApplicationBuilder builder)
     builder.Services.AddEndpointsApiExplorer();
     builder.Services.AddSwaggerGen();
 }
+
+public partial class Program { }

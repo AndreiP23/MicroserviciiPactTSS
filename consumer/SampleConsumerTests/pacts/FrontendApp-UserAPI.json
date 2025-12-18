@@ -1,0 +1,46 @@
+{
+  "consumer": {
+    "name": "FrontendApp"
+  },
+  "interactions": [
+    {
+      "description": "Cerere pentru detaliile userului 666",
+      "pending": false,
+      "request": {
+        "method": "GET",
+        "path": "/api/users/666"
+      },
+      "response": {
+        "body": {
+          "content": {
+            "email": "rava.lucifer@4226crangasi.com",
+            "firstName": "Ravanelli",
+            "id": 666,
+            "lastName": "Lucifer"
+          },
+          "contentType": "application/json",
+          "encoded": false
+        },
+        "headers": {
+          "Content-Type": [
+            "application/json"
+          ]
+        },
+        "status": 200
+      },
+      "type": "Synchronous/HTTP"
+    }
+  ],
+  "metadata": {
+    "pactRust": {
+      "ffi": "0.4.27",
+      "models": "1.2.8"
+    },
+    "pactSpecification": {
+      "version": "4.0"
+    }
+  },
+  "provider": {
+    "name": "UserAPI"
+  }
+}
