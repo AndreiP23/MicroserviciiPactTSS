@@ -1,8 +1,5 @@
-﻿using PactNet.Verifier;
-using Xunit;
-using Microsoft.AspNetCore.Mvc.Testing;
-using SampleProvider;
-using Microsoft.VisualStudio.TestPlatform.TestHost;
+﻿using Microsoft.AspNetCore.Mvc.Testing;
+using PactNet.Verifier;
 
 namespace SampleProviderTests;
 

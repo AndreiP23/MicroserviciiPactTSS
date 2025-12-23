@@ -1,8 +1,4 @@
 ﻿using PactNet;
-using Xunit;
-using System.Net.Http;
-using System.Threading.Tasks;
-using System.Runtime.InteropServices;
 
 namespace SampleConsumerTests;
 
