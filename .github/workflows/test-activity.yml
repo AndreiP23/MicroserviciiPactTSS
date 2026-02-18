@@ -1,0 +1,17 @@
+name: Test Activity
+on: [push, workflow_dispatch]
+
+jobs:
+  success-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: This will pass
+        run: echo "Everything is fine!"
+
+  fail-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: This will fail
+        run: |
+          echo "Simulating an error..."
+          exit 1
